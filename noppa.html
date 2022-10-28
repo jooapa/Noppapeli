@@ -1,0 +1,156 @@
+<!DOCTYPE html >
+<html lang="en">
+<head >
+    <meta charset="UTF-8">
+    <style>
+        * { margin: 0; padding: 0; }
+        body{
+            background-color: rgb(75, 75, 75);
+            background: linear-gradient(0deg, rgba(75,75,75,1) 0%, rgba(15,15,15,1) 90%); 
+        }
+        button{
+            
+            background-color: white;
+            border: none;
+            color: #000000;
+       
+            text-align: center;
+            text-decoration: none;
+            display: ruby-base;
+            font-size: 30px;
+            padding: 10px;
+            position: static;
+            margin-top: 5%;
+            border-radius: 10px;
+            left: 44%;
+           
+
+        }
+        header{
+            width: 100%;
+            height: 50%;
+            background-color: rgb(15, 15, 15);
+            
+        }
+        .kir{
+            color: white;
+            text-align: center;
+            padding: 0px 0px;
+            position: relative;
+            nav-left: 100px;
+            font-size: 100px;
+        }
+        .noppatulosDiv{
+            position: relative;
+            font-size: 100px;
+            background-color: rgb(15, 15, 15);
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+            gap: 100%;
+            width: 100%;
+            height: 350px;
+            
+        }
+        #noppatulos1{
+            color: rgb(20, 98, 167);
+            left: -150px;
+            top: 100px;
+            position: relative;
+        }
+        #noppatulos2{
+            color: rgb(20, 98, 167);
+            left: 150px;
+            top: 100px;
+            position: relative;
+        }
+    
+        .terminal {
+            border-radius: 5px 5px 0 0;
+            position: relative;
+
+        }
+        .terminal .ylä {
+            background: #000000;
+            color: rgb(255, 255, 255);
+            padding: 10px;
+            border-radius: 0px 0px 0 0;
+            font-family: fantasy;
+            font-size: 13px;
+
+      
+        }
+        .terminal .body {
+            background: rgb(0, 0, 0);
+            color: rgb(28, 168, 0);
+            padding: 0px;
+            overflow: auto;
+            height: 400px;
+            line-height: 0.8;
+            margin-top: 0px;
+            
+        }
+        .space {
+            margin: 25px;
+            position: absolute;
+            width:  30%;
+            right: 2%;
+            top: 0%;
+            height: 50%;
+        }
+
+        #history1{
+            font-size: 12px;
+        }
+
+    </style>
+    <title>NoppaPeli</title>
+    <script src="java.js"></script>
+</head>
+<body onload="alku();">
+    <header> 
+
+         <div class="kir">
+            NoppaPeli<br>
+
+            <button onclick="heita()">Heitä noppaa</button>
+            
+            <div class="noppatulosDiv"><br>
+                <img id="Face1" src="https://thefiveplanets.org/b01/data/graphics/textures/dice/face1.jpg" width="200" height="200">
+                <img id="Face2" src="https://thefiveplanets.org/b01/data/graphics/textures/dice/face2.jpg" width="200" height="200">
+                <img id="Face3" src="https://thefiveplanets.org/b01/data/graphics/textures/dice/face3.jpg" width="200" height="200">
+                <img id="Face4" src="https://thefiveplanets.org/b01/data/graphics/textures/dice/face4.jpg" width="200" height="200">
+                <img id="Face5" src="https://thefiveplanets.org/b01/data/graphics/textures/dice/face5.jpg" width="200" height="200">
+                <img id="Face6" src="https://thefiveplanets.org/b01/data/graphics/textures/dice/face6.jpg" width="200" height="200">
+                <teksti id="noppatulos1"></teksti>
+                &nbsp;&nbsp;&nbsp;
+                <teksti id="noppatulos2"></teksti>
+                <img id="Face11" src="https://thefiveplanets.org/b01/data/graphics/textures/dice/face1.jpg" width="200" height="200">
+                <img id="Face22" src="https://thefiveplanets.org/b01/data/graphics/textures/dice/face2.jpg" width="200" height="200">
+                <img id="Face33" src="https://thefiveplanets.org/b01/data/graphics/textures/dice/face3.jpg" width="200" height="200">
+                <img id="Face44" src="https://thefiveplanets.org/b01/data/graphics/textures/dice/face4.jpg" width="200" height="200">
+                <img id="Face55" src="https://thefiveplanets.org/b01/data/graphics/textures/dice/face5.jpg" width="200" height="200">
+                <img id="Face66" src="https://thefiveplanets.org/b01/data/graphics/textures/dice/face6.jpg" width="200" height="200">
+            </div>
+
+        </div>
+            
+
+        <div class="terminal space">
+            <div class="ylä">
+                
+                <div class="title"><img src="https://git-for-windows.github.io/favicon.ico" alt="MINGW64:/" width="16" height="16" style="vertical-align:middle">
+                    MINGW64:/</div>
+            </div>
+            
+            <pre class="body">
+<p id="history1">USER@DESKTOP-JS69PF2 <span style="color:rgb(177, 72, 198)">MINGW64</span> <span style="color: rgb(192, 160, 83)">/</span></p>
+    <p id="noppatulos"></p>
+    <p id="summa"></p>
+    <p id="summa1"></p>
+            </pre>
+        </div>
+
+                
+    </header>
+</body>
+</html>
